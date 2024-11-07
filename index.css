@@ -19,6 +19,9 @@
 button {
   cursor: pointer;
 }
+.harmony-logo-small {
+  display: none;
+}
 .form-wrapper {
   display: flex;
   background-color: var(--grey-50);
@@ -86,4 +89,12 @@ button {
   outline: 1px solid var(--brand-dark);
   box-shadow: var(--box-shadow-lg);
   transition: all 0.3s ease;
+}
+@media (max-width: 640px) {
+  .harmony-logo {
+    display: none;
+  }
+  .harmony-logo-small {
+    display: block;
+  }
 }
