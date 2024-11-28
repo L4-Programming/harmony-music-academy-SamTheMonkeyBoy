@@ -4,15 +4,10 @@ let form = document.querySelector("form");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  // Get the user's email address - userEmail (string)
   let userEmail = document.querySelector("#email").value;
-
-  // Get the user's level - userLevel (string)
   let userLevel = document.querySelector("#level").value;
-
-  // Get the user's hours of study userHours (number)
   let userHours = document.querySelector("#hoursPerWeek").value;
-  console.log({ userHours, userLevel, userEmail });
+  console.log({ userEmail, userLevel, userHours });
 });
 // Validate the user's input
 // Check if the user has selected a level - check level entered; check selected "Beginner" or "Advanced"; conditional statements
